@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas:
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "pie pie pie";
+  min-height: 100dvh;
+}
+.cabecera{
+  background-color: #242424;
+}
+.cabecera {
+  grid-area: cabecera;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.cabecera {
+  position: sticky;
+  top: 0;
+}
+
+.navegacion {
+  display: grid;
+  justify-content: center;
+  gap: 3rem;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-areas: "barra logo tema";
+  padding-inline: 0.5rem;
+}
+
+.barra {
+  grid-area: barra;
+  display: flex;
+  align-items: center;
+}
+.logotipo {
+  grid-area: logo;
+}
+.tema {
+  grid-area: tema;
+  display: flex;
+  align-items: center;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logotipo img {
+  vertical-align: middle;
+  width: 32px;
+  border-radius: 50%;
+}
+.logotipo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.principal {
+  grid-area: principal;
+}
+
+.pie-pagina {
+  grid-area: pie;
+  background-color: #171717;
+}
+.pie-pagina {
+  padding: 0.5rem;
+}
+.contenido-caja {
+  gap: 0.5rem;
+}
+.caja-op {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.caja-op li {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+.caja-op li a,
+.caja-op li p {
+  font-size: 0.8rem;
+}
+.caja-op li a:hover {
+  color: #1ffd85;
+}
+.caja {
+  display: grid;
+  height: fit-content;
+}
+.t-verde {
+  padding: 0.5rem;
+}
+
+.li-contacto{
+  flex-direction: column;
+}
+.li-contacto div{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.li-ubicacion{
+  display: flex;
+  align-items: center;
+}
+/* Estilo personalizado */
+.t-verde {
+  color: #1ffd85;
+  font-weight: bold;
+}
+
+@media (width >= 300px) {
+}
+
+@media (width >= 992px) {
+  .cabecera{
+    display: grid;
+    justify-content: center;
+  }
+  .navegacion{
+    max-width: 80%;
+  }
+  .pie-pagina{
+    position: sticky;
+  }
+  .contenido-caja {
+    display: grid;
+    grid-template-areas:
+      "legales soporte contacto"
+      "legales servicios contacto";
+    justify-content: center;
+    column-gap: 2rem;
+  }
+  .caja.legales {
+    grid-area: legales;
+  }
+  .caja.soporte {
+    grid-area: soporte;
+  }
+  .caja.servicios {
+    grid-area: servicios;
+  }
+  .caja.contacto {
+    grid-area: contacto;
+  }
+}

@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  display: grid;
+}
+.contenedor {
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 56px 1fr auto;
+  grid-template-areas:
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "pie pie pie";
+  min-height: 100dvh;
+}
+
+/* Diseño Cabecera */
+
+/* -------------------------------------------------- */
+.cabecera {
+  background-color: #242424;
+}
+.cabecera {
+  grid-area: cabecera;
+}
+.cabecera {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  align-content: center;
+}
+.navegacion {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  padding-inline: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* css de barra */
+.barra {
+  display: flex;
+}
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  left: -50%; /* Comienza fuera de la pantalla */
+  width: 50%;
+  height: 100vh;
+  background-color: #161616;
+  opacity: 0; /* Invisible al principio */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave */
+}
+
+.barra-lateral.activo {
+  transform: translateX(100%); /* Mueve la barra lateral hacia adentro */
+  opacity: 1; /* Hace la barra visible */
+  z-index: 3;
+}
+.cerrar {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* css de logotipo */
+.logotipo,
+.nav-op {
+  display: flex;
+  align-items: center;
+}
+
+.logotipo span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.barra,
+.logotipo,
+.nav-op {
+  justify-content: center;
+}
+
+.tema {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------- */
+
+/* Diseño Principal */
+.principal {
+  grid-area: principal;
+}
+
+.img-cabecera {
+  max-width: 100%;
+}
+.img-1 {
+  min-height: 32rem;
+  background-color: #393939;
+}
+
+.sec-2 {
+  display: flex;
+}
+
+.sec-3 {
+  display: grid;
+  padding: 1rem;
+  /* justify-content: center; */
+}
+.sec-3 {
+  grid-template-areas:
+    "c2"
+    "c1";
+}
+.contacto-info {
+  grid-area: c1;
+  display: grid;
+  padding: 1rem;
+}
+.imagen-cliente {
+  grid-area: c2;
+}
+.sec-3 .imagen-cliente {
+  justify-self: center;
+}
+.tel-info,
+.ubicacion-info,
+.llamada-info {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.tel-info,
+.ubicacion-info,
+.llamada-info {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+
+.ubicacion-info p {
+  max-width: 35ch;
+}
+
+.info {
+  padding-top: 2rem;
+  padding-inline: 1rem;
+  /* text-align: center; */
+}
+.info button {
+  display: block;
+  justify-self: center;
+  border: none;
+  border-radius: 2rem;
+}
+
+/* Diseño del pie de pagina */
+.pie-pagina {
+  grid-area: pie;
+  background-color: #171717;
+  padding: 1rem;
+}
+
+.contenido-caja {
+  gap: 0.5rem;
+}
+.caja-op {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.caja-op li {
+  display: grid;
+  list-style: none;
+  gap: 0.5rem;
+}
+.caja-op li a,
+.caja-op li p {
+  font-size: 0.8rem;
+}
+.caja-op li a{
+  padding: .3rem;
+}
+.caja-op li a:hover {
+  color: #1ffd85;
+}
+.caja {
+  display: grid;
+  height: fit-content;
+}
+
+.li-contacto div,
+.li-ubicacion{
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+@media (width >= 992px) {
+  .barra {
+    display: none;
+  }
+  .navegacion {
+    display: flex;
+    padding-inline: 10rem;
+    justify-content: space-between;
+  }
+  .info p {
+    font-size: 1.5rem;
+  }
+  .sec-1 {
+    min-height: 350px;
+  }
+  .img-1 {
+    min-height: 19.56rem;
+  }
+
+  .sec-2 {
+    justify-content: center;
+  }
+
+  .sec-3 {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "c1 c2";
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-inline: 5rem;
+  }
+
+  .imagen-cliente img {
+    max-height: 250px;
+  }
+
+  /* pie pagina */
+  .contenido-caja{
+    display: grid;
+    justify-content: flex-start;
+    grid-template-areas:
+    "legales soporte contacto"
+    "legales servicios contacto";
+    column-gap: 1rem;
+    padding-inline: 5rem;
+  }
+  .legales{
+    grid-area: legales;
+  }
+  .soporte{
+    grid-area: soporte;
+  }
+  .servicios{
+    grid-area: servicios;
+  }
+  .contacto{
+    grid-area: contacto;
+  }
+  .caja-op li a{
+  padding: .4rem;
+}
+}

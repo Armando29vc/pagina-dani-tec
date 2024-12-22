@@ -1,0 +1,42 @@
+/* framework armando */
+.ct-gris {
+  color: #434343;
+  font-weight: bold;
+}
+.ct-verde{
+  color: #1ffd85;
+  font-weight: bold;
+}
+.btn-verde{
+  background-color: #00792a;
+}
+
+.btn-verde:hover{
+  background-color: #004d1b;
+}
+.borde-boton{
+  border-bottom: 2px solid #1ffd85;
+}
+
+.p-1{
+  padding: 1rem;
+}
+.p-2{
+  padding: 2rem;
+}
+.p-3{
+  padding: 3rem;
+}
+.mt-1{
+  margin-top: 1rem;
+}
+.f-bold{
+  font-weight: bold;
+}
+
+.tt-m {
+  font-size: 1.2rem;
+}
+.tt-g {
+  font-size: 2rem;
+}
