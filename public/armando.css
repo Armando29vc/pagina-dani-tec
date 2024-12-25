@@ -1,42 +1,67 @@
-/* framework armando */
-.ct-gris {
-  color: #434343;
-  font-weight: bold;
-}
-.ct-verde{
-  color: #1ffd85;
-  font-weight: bold;
-}
-.btn-verde{
-  background-color: #00792a;
-}
-
-.btn-verde:hover{
-  background-color: #004d1b;
-}
-.borde-boton{
-  border-bottom: 2px solid #1ffd85;
+:root {
+  --borde-boton-o: 2px solid #1ffd85;
+  --borde-boton-c: 2px solid #f91ffd;
+  --relleno-1: 1rem;
+  --margen-1: 1rem;
+  --color-po: #00792a;/* color primario oscuro */
+  --color-so: #1ffd85;/* color secundario oscuro */
+  --color-po-hover: #004d1b;
+  --color-pc: #d100ac;
+  --color-pc-hover: #9a007e;
+  --color-sc: #c810a6;
 }
 
-.p-1{
-  padding: 1rem;
+/* colores */
+.btn-primario {
+  background-color: var(--color-po);
 }
-.p-2{
-  padding: 2rem;
+.claro .btn-primario {
+  background-color: var(--color-pc);
 }
-.p-3{
-  padding: 3rem;
+
+.hover\:btn-primario:hover {
+  background-color: var(--color-po-hover);
 }
-.mt-1{
-  margin-top: 1rem;
+
+.claro .hover\:btn-primario:hover {
+  background-color: var(--color-pc-hover);
 }
-.f-bold{
+
+.color-texto-primario {
+  color: var(--color-so);
+  font-weight: bold;
+}
+.claro .color-texto-primario {
+  color: var(--color-sc);
   font-weight: bold;
 }
 
-.tt-m {
-  font-size: 1.2rem;
+.claro .svg-color-primario {
+  fill: var(--color-sc);
 }
-.tt-g {
-  font-size: 2rem;
+
+.borde-boton {
+  border-bottom: var(--borde-boton-o);
+}
+.claro .borde-boton{
+  border-bottom: var(--borde-boton-c);
+}
+
+.peso-fuente-gruesa {
+  font-weight: bold;
+}
+
+.m-cuadricula {
+  display: grid;
+}
+
+.relleno-1 {
+  padding: var(--relleno-1);
+}
+
+.margen-ar-1 {
+  margin-top: var(--margen-1);
+}
+.margen-ab-1 {
+  margin-bottom: var(--margen-1);
 }

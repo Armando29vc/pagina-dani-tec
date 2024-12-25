@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red</title>
     <link rel="icon" href="public/red.svg" />
-    <link rel="stylesheet" href="public/estilo.css"  />
+
+    <link rel="stylesheet" href="public/estilo.css" />
     <link rel="stylesheet" href="public/armando.css" />
   </head>
   <body>
     <div class="contenedor">
-      <header class="cabecera borde-boton">
+      <header class="cabecera m-cuadricula borde-boton">
         <nav class="navegacion">
           <div class="barra">
             <svg
+              class="svg-color-primario"
               xmlns="http://www.w3.org/2000/svg"
               height="40px"
               viewBox="0 -960 960 960"
@@ -42,6 +44,7 @@
           </div>
           <div class="logotipo">
             <svg
+              class="svg-color-primario"
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
@@ -52,11 +55,21 @@
                 d="M200-160v-240h120v240H200Zm240 0v-440h120v440H440Zm240 0v-640h120v640H680Z"
               />
             </svg>
-            <span>red</span>
+            <span class="peso-fuente-gruesa">red</span>
           </div>
           <div class="nav-op">
+            <button class="btn-nav btn-primario f-bold hover:btn-primario">
+              Boton 1
+            </button>
+            <button class="btn-nav btn-primario f-bold hover:btn-primario">
+              Boton 2
+            </button>
+            <button class="btn-nav btn-primario f-bold hover:btn-primario">
+              Boton 3
+            </button>
             <div class="tema">
               <svg
+                class="svg-color-primario"
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
                 viewBox="0 -960 960 960"
@@ -75,32 +88,38 @@
         <section class="sec-1">
           <div class="img-1"></div>
           <!-- <img
-            
             alt=""
             class="img-cabecera"
           /> -->
         </section>
         <section class="sec-2">
           <div class="info">
-            <p>
+            <p class="tamaño-fuente-larga">
               Para conocer los planes de internet hogar de fibra óptica
               disponibles en tu ciudad,
             </p>
-            <p>explora la variedad de opciones que tenemos para ti.</p>
-            <button class="btn-verde p-1 mt-1 f-bold btn-verde:hover">
+            <p class="tamaño-fuente-larga">
+              explora la variedad de opciones que tenemos para ti.
+            </p>
+            <button
+              class="btn-primario relleno-1 margen-ar-1 margen-ab-1 f-bold hover:btn-primario peso-fuente-gruesa"
+            >
               Consultar planes de fibra
             </button>
           </div>
         </section>
         <section class="sec-3">
           <div class="contacto-info">
-            <h3>Contáctanos para más información</h3>
+            <h3 class="margen-ar-1 margen-ab-1">
+              Contáctanos para más información
+            </h3>
             <div class="horario-info">
               <p>Horario de atención:</p>
               <p>Lunes a Domingo de las 9:00 a las 21:00.</p>
             </div>
             <div class="tel-info">
               <svg
+                class="svg-color-primario"
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
                 viewBox="0 -960 960 960"
@@ -115,6 +134,7 @@
             </div>
             <div class="ubicacion-info">
               <svg
+                class="svg-color-primario"
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
                 viewBox="0 -960 960 960"
@@ -132,6 +152,7 @@
             </div>
             <div class="llamada-info">
               <svg
+                class="svg-color-primario"
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
                 viewBox="0 -960 960 960"
@@ -142,21 +163,18 @@
                   d="m742.67-360-47.34-47.33q15.34-15 23.5-34.01 8.17-19.02 8.17-39.99 0-20.67-7.83-40.17Q711.33-541 696-556l46.67-47.33Q767-579 780.33-547.58q13.34 31.42 13.34 65.5t-13.34 65.91Q767-384.33 742.67-360Zm88.66 88.67-46-46.67q32.59-32.49 50.47-74.41 17.87-41.92 17.87-88.59T835-569.67q-18.67-42-54.33-71.66L830-690.67q43.64 41.45 66.99 95.73 23.34 54.27 23.34 114.27 0 60-23 114.04-23 54.03-66 95.3ZM266.67-40q-27.5 0-47.09-19.58Q200-79.17 200-106.67v-746.66q0-27.5 19.58-47.09Q239.17-920 266.67-920h426.66q27.5 0 47.09 19.58Q760-880.83 760-853.33v150.66h-66.67v-50.66H266.67v546.66h426.66v-50.66H760v150.66q0 27.5-19.58 47.09Q720.83-40 693.33-40H266.67Zm0-100v33.33h426.66V-140H266.67Zm0-680h426.66v-33.33H266.67V-820Zm0 0v-33.33V-820Zm0 680v33.33V-140Z"
                 />
               </svg>
-              <p>
-                Av. Santa Fe núm. 495, Lomas de Santa Fe, Contadero, Cuajimalpa
-                de Morelos, CP. 05348, CDMX.
-              </p>
+              <p>Ó déjanos tu número y nosotros te contactamos</p>
             </div>
           </div>
           <div class="imagen-cliente">
-            <img src="public/image 1.png" alt="" />
+            <img src="public/imagen 1o.png" alt="" />
           </div>
         </section>
       </main>
       <footer class="pie-pagina">
         <div class="contenido-caja">
           <div class="caja legales">
-            <p class="ct-verde">Legales</p>
+            <p class="color-texto-primario titulo">Legales</p>
             <ul class="caja-op">
               <li>
                 <a href="" rel="noopener noreferrer">
@@ -213,7 +231,7 @@
             </ul>
           </div>
           <div class="caja soporte">
-            <p class="ct-verde">Soporte</p>
+            <p class="color-texto-primario titulo">Soporte</p>
             <ul class="caja-op">
               <li>
                 <a href="" rel="noopener noreferrer">
@@ -225,8 +243,8 @@
               </li>
             </ul>
           </div>
-            <div class="caja servicios">
-            <p class="ct-verde">Servicios</p>
+          <div class="caja servicios">
+            <p class="color-texto-primario titulo">Servicios</p>
             <ul class="caja-op">
               <li>
                 <a href="" rel="noopener noreferrer">
@@ -239,11 +257,12 @@
             </ul>
           </div>
           <div class="caja contacto">
-            <p class="ct-verde">contacto</p>
+            <p class="color-texto-primario titulo">Contacto</p>
             <ul class="caja-op">
               <li class="li-contacto">
                 <div>
                   <svg
+                  class="svg-color-primario"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -254,23 +273,34 @@
                       d="M400-160h160v-40H400v40ZM280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm0-80h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"
                     />
                   </svg>
-                  <a href="" rel="noopener noreferrer"> 971 123 45 67 </a>
+                  <p>971 123 45 67</p>
                 </div>
 
-                <a href=""
-                  >Atención a clientes de lunes a domingo de 9:00 a 21:00</a
-                >
+                <p>Atención a clientes de lunes a domingo de 9:00 a 21:00</p>
               </li>
               <li class="li-ubicacion">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1ffd85"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-                <p>Av. Santa Fe núm. 495, Lomas de Santa Fe, <br>
-                Contadero, Cuajimalpa de Morelos, CP. 05348, CDMX.</p>
+                <svg
+                class="svg-color-primario"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#1ffd85"
+                >
+                  <path
+                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                  />
+                </svg>
+                <p>
+                  Av. Santa Fe núm. 495, Lomas de Santa Fe, <br />
+                  Contadero, Cuajimalpa de Morelos, CP. 05348, CDMX.
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
-    <script src="assets/acciones.js"></script>
+    <script src="assets/acciones.js" type="module"></script>
   </body>
 </html>
