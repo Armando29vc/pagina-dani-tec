@@ -8,19 +8,15 @@ export function actualizarImagen() {
     // Pantalla mayor o igual a 768px
     // imgCabecera.src = "public/promo_mes_2_4.webp";
 
-    if (localStorage.getItem("tema") === "claro") {
-      imgCabecera.src = "public/imagen 2c.png";
-    } else {
-      imgCabecera.src = "public/imagen 2o.png";
-    }
+    localStorage.getItem("tema") === "claro"
+      ? (imgCabecera.src = "public/imagen 2c.png")
+      : (imgCabecera.src = "public/imagen 2o.png");
   } else {
     // Pantalla menor a 768px
     // imgCabecera.src = "public/promo_mes_2_4_mobile.webp";
-    if (localStorage.getItem("tema") === "claro") {
-      imgCabecera.src = "public/imagen 1c.png";
-    } else {
-      imgCabecera.src = "public/imagen 1o.png";
-    }
+    localStorage.getItem("tema") === "claro"
+      ? (imgCabecera.src = "public/imagen 1c.png")
+      : (imgCabecera.src = "public/imagen 1o.png");
   }
 }
 
