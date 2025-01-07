@@ -6,9 +6,9 @@
   --color-po: #00792a;/* color primario oscuro */
   --color-so: #1ffd85;/* color secundario oscuro */
   --color-po-hover: #004d1b;
-  --color-pc: #d100ac;
+  --color-pc: #d100ac;/* color primario claro */
+  --color-sc: #c810a6;/* color primario claro */
   --color-pc-hover: #9a007e;
-  --color-sc: #c810a6;
 }
 
 /* colores */
