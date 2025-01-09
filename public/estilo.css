@@ -14,9 +14,10 @@ img {
   width: 100%;
 }
 
-:root {
+
+/* :root {
   color-scheme: light dark;
-}
+} */
 
 body {
   min-height: 100dvh;
@@ -32,6 +33,12 @@ body.oscuro {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
 }
+.claro button{
+  color: black;
+}
+.oscuro button{
+  color: white;
+}
 
 .contenedor {
   display: grid;
@@ -39,6 +46,9 @@ body.oscuro {
 }
 
 /* cabecera */
+.cabecera{
+  z-index: 3;
+}
 
 .navegacion {
   display: grid;
@@ -130,10 +140,12 @@ body.oscuro {
   min-height: 32rem;
 }
 
-.principal .sec {
-  display: grid;
-  justify-self: center;
+
+.sec:nth-child(odd) {
+  background-color: #1e1e1e;
 }
+
+
 .principal .sec:first-child {
   justify-self: stretch;
 }
@@ -166,6 +178,18 @@ body.oscuro {
 .sec:nth-child(3) {
   padding-inline: 1rem;
   gap: 1rem;
+}
+
+.sec:nth-child(4){
+  padding-inline: 1rem;
+}
+.nosotros{
+  display: grid;
+  justify-items: center;
+}
+
+.nosotros-contenido p{
+  text-align: center;
 }
 
 .imagen-cliente {
@@ -301,7 +325,12 @@ body.oscuro {
   .sec:nth-child(3) {
     display: grid;
     grid-template-areas: "promociones modelo";
+    justify-content: center;
   }
+  .sec:nth-child(3){
+    padding-inline: 0;
+  }
+  
   .promociones {
     grid-area: promociones;
   }
@@ -309,8 +338,10 @@ body.oscuro {
   .modelo {
     grid-area: modelo;
   }
+
   .modelo img {
-    width: 400px;
+    width: 200px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
   }
 
   .info {
@@ -327,7 +358,8 @@ body.oscuro {
     grid-template-columns: auto 1fr;
   }
   .sec:nth-child(4){
-    row-gap: 1.5rem;
+    display: grid;
+    justify-content: center;
   }
   .contenido-uno {
     display: grid;
@@ -341,11 +373,15 @@ body.oscuro {
   .nosotros {
     grid-area: nosotros;
   }
+  .nosotros{
+    justify-items: start;
+  }
   .nosotros-contenido {
     grid-area: contenido;
   }
   .nosotros-contenido p {
     max-width: 36ch;
+    text-align: start;
   }
   .equipo {
     grid-area: equipo;

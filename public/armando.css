@@ -65,10 +65,16 @@
   padding: var(--relleno-1);
 }
 
-.margen-ar-1 {
+.m\:margen-ar-0 {
+  margin-top: 0;
+}
+.m\:margen-ab-0 {
+  margin-bottom: 0;
+}
+.m\:margen-ar-1 {
   margin-top: var(--margen-1);
 }
-.margen-ab-1 {
+.m\:margen-ab-1 {
   margin-bottom: var(--margen-1);
 }
 
@@ -79,12 +85,36 @@
 /* tipografia */
 
 /* tamaños */
+.m\:texto-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+.m\:texto-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
 .m\:texto-base {
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
 }
 
 @media (width >= 992px) {
+  .margen-ar-0 {
+    margin-top: 0;
+  }
+  .margen-ab-0 {
+    margin-bottom: 0;
+  }
+  .margen-ar-1 {
+    margin-top: var(--margen-1);
+  }
+  .margen-ab-1 {
+    margin-bottom: var(--margen-1);
+  }
+
+  /* tipografia */
+
   .texto-xs {
     font-size: 0.75rem; /* 12px */
     line-height: 1rem; /* 16px */
