@@ -20,10 +20,10 @@ export function actualizarImagen() {
   }
 }
 
-actualizarImagen();
+//actualizarImagen();
 
 // Escuchar cambios en el tamaño de la pantalla
-window.addEventListener("resize", actualizarImagen);
+//window.addEventListener("resize", actualizarImagen);
 
 const barra = document.querySelector(".barra");
 const barraModal = document.querySelector(".barra-lateral");

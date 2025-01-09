@@ -52,6 +52,14 @@ body.oscuro {
   justify-content: center;
   gap: 0.2rem;
 }
+.logotipo {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.logotipo img {
+  width: 4.5rem;
+}
 
 .nav-op {
   display: flex;
@@ -59,7 +67,7 @@ body.oscuro {
   align-items: center;
 }
 
-.claro .nav-op button{
+.claro .nav-op button {
   color: white;
 }
 
@@ -118,14 +126,16 @@ body.oscuro {
   /* justify-content: center; */
 }
 
-.sec-1 {
+.sec:first-child {
   min-height: 32rem;
 }
 
-.principal .sec-2,
-.principal .sec-3 {
+.principal .sec {
   display: grid;
   justify-self: center;
+}
+.principal .sec:first-child {
+  justify-self: stretch;
 }
 
 .info {
@@ -147,7 +157,13 @@ body.oscuro {
   border-radius: 2rem;
 }
 
-.sec-3 {
+/* modificando la seccion 2 */
+.sec:nth-child(2) {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sec:nth-child(3) {
   padding-inline: 1rem;
   gap: 1rem;
 }
@@ -188,10 +204,10 @@ body.oscuro {
   padding: 1rem;
   justify-content: center;
 }
-.claro .pie-pagina{
+.claro .pie-pagina {
   background-color: #dfdfdf;
 }
-.claro .pie-pagina a{
+.claro .pie-pagina a {
   color: black;
 }
 
@@ -199,6 +215,7 @@ body.oscuro {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .caja-op {
   display: grid;
 }
@@ -212,9 +229,9 @@ body.oscuro {
   padding-bottom: 0.3rem;
 }
 .caja-op li a:hover {
-  color: #1ffd85;
+  color: #24f2f5;
 }
-.claro .caja-op li a:hover{
+.claro .caja-op li a:hover {
   color: #af0290;
 }
 
@@ -232,12 +249,21 @@ body.oscuro {
 
 @media (width >= 992px) {
   .contenedor {
-    grid-template-rows: 65px 1fr auto;
+    grid-template-rows: 80px 1fr auto;
   }
 
   .cabecera {
     justify-content: center;
+    position: sticky;
+    top: 0;
   }
+  .claro .cabecera {
+    background-color: #ffffff;
+  }
+  .oscuro .cabecera {
+    background-color: #242424;
+  }
+
   .navegacion {
     width: 80vw;
     display: flex;
@@ -260,16 +286,31 @@ body.oscuro {
   }
 
   /* principal */
-  .principal {
+  /* .principal {
     padding: 3rem;
-  }
-
-  .sec-1 {
+  } */
+  .sec:first-child {
+    padding: 0;
     min-height: 22rem;
   }
+  .sec:first-child img {
+    max-height: 90vh;
+    object-fit: cover;
+  }
 
-  .sec-2 p {
-    font-size: 1.5rem;
+  .sec:nth-child(3) {
+    display: grid;
+    grid-template-areas: "promociones modelo";
+  }
+  .promociones {
+    grid-area: promociones;
+  }
+
+  .modelo {
+    grid-area: modelo;
+  }
+  .modelo img {
+    width: 400px;
   }
 
   .info {
@@ -284,6 +325,61 @@ body.oscuro {
   .sec-3 {
     padding-inline: 0;
     grid-template-columns: auto 1fr;
+  }
+  .sec:nth-child(4){
+    row-gap: 1.5rem;
+  }
+  .contenido-uno {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "nosotros equipo"
+      "contenido equipo";
+    gap: 1rem;
+  }
+  .nosotros {
+    grid-area: nosotros;
+  }
+  .nosotros-contenido {
+    grid-area: contenido;
+  }
+  .nosotros-contenido p {
+    max-width: 36ch;
+  }
+  .equipo {
+    grid-area: equipo;
+  }
+  .equipo img {
+    width: 250px;
+    border-radius: 20px;
+  }
+  .contenido-dos {
+    display: grid;
+    
+    grid-template-areas:
+      "cliente cliente"
+      "mision vision";
+      gap: 1rem;
+      row-gap: 2rem;
+  }
+  .cliente {
+    grid-area: cliente;
+  }
+  .cliente p {
+    max-width: 74ch;
+  }
+  .mision{
+    grid-area: mision;
+  }
+  .mision p{
+    max-width: 48ch;
+  }
+  .vision{
+    grid-area: vision;
+  }
+  .vision p{
+    max-width: 40ch;
   }
 
   .contacto-info h3 {
@@ -314,7 +410,8 @@ body.oscuro {
     grid-template-rows: 1fr 1fr; */
     grid-template-areas:
       "legales soporte contacto"
-      "legales servicios contacto";
+      "legales social servicios"
+      "legales . .";
     column-gap: 3rem;
   }
   .legales {
@@ -333,8 +430,24 @@ body.oscuro {
   .contacto {
     grid-area: contacto;
   }
-
-  .titulo {
-    font-size: 1.2rem;
+  .social {
+    grid-area: social;
+  }
+  .social {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .logo-masconect {
+    width: 150px;
+  }
+  .social p {
+    font-weight: bold;
+  }
+  .facebook {
+    width: 25px;
+    transition: transform 0.3s ease;
+  }
+  .facebook:hover {
+    transform: scale(1.28);
   }
 }

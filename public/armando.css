@@ -1,14 +1,20 @@
 :root {
-  --borde-boton-o: 2px solid #1ffd85;
+  /*   --borde-boton-o: 2px solid #1ffd85;*/
+  --borde-boton-o: 2px solid #98b9d1;
   --borde-boton-c: 2px solid #f91ffd;
   --relleno-1: 1rem;
   --margen-1: 1rem;
-  --color-po: #00792a;/* color primario oscuro */
-  --color-so: #1ffd85;/* color secundario oscuro */
-  --color-po-hover: #004d1b;
-  --color-pc: #d100ac;/* color primario claro */
-  --color-sc: #c810a6;/* color primario claro */
+  /* --color-po: #00792a; */ /* color primario oscuro */
+  --color-po: #032f72; /* color primario oscuro */
+  --color-so: #96fcfd; /* color secundario oscuro */
+  --color-po-hover: #002357;
+  --color-pc: #d100ac; /* color primario claro */
+  --color-sc: #c810a6; /* color secundario claro */
   --color-pc-hover: #9a007e;
+
+  /* tipografia */
+  --fuente-negrita: bold;
+  /* tamaños */
 }
 
 /* colores */
@@ -43,7 +49,7 @@
 .borde-boton {
   border-bottom: var(--borde-boton-o);
 }
-.claro .borde-boton{
+.claro .borde-boton {
   border-bottom: var(--borde-boton-c);
 }
 
@@ -64,4 +70,51 @@
 }
 .margen-ab-1 {
   margin-bottom: var(--margen-1);
+}
+
+.f-negrita {
+  font-weight: var(--fuente-negrita);
+}
+
+/* tipografia */
+
+/* tamaños */
+.m\:texto-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+@media (width >= 992px) {
+  .texto-xs {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+  }
+  .texto-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+  .texto-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+  .texto-lg {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+  .texto-xl {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+  .texto-2xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+  .texto-3xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+  .texto-4xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
 }
