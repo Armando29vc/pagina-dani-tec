@@ -16,15 +16,6 @@ export function tema() {
     body.classList.remove("claro");
     actualizarImagen();
   }
-  // Configurar el tema por defecto
-  const temaGuardado = localStorage.getItem("tema");
-  if (!temaGuardado) {
-    oscuro(); // Establecer tema oscuro por defecto
-  } else if (temaGuardado === "claro") {
-    claro();
-  } else {
-    oscuro();
-  }
 
   tema.addEventListener("click", e =>
     localStorage.getItem("tema") === "oscuro" ? claro() : oscuro()
