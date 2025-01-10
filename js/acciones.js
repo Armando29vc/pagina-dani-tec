@@ -49,6 +49,7 @@ barra.addEventListener("click", () => {
   }
 
   contenedor.style.overflow = "hidden";
+  contenedor.style.overflowY = "auto";
 });
 
 barraCerrar.addEventListener("click", e => {

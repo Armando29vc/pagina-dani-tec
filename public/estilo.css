@@ -14,7 +14,6 @@ img {
   width: 100%;
 }
 
-
 /* :root {
   color-scheme: light dark;
 } */
@@ -33,27 +32,27 @@ body.oscuro {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
 }
-.claro button{
+.claro button {
   color: black;
 }
-.oscuro button{
+.oscuro button {
   color: white;
 }
 
 .contenedor {
   display: grid;
-  grid-template-rows: 40px;
+  grid-template-rows: 45px;
 }
 
 /* cabecera */
-.cabecera{
+.cabecera {
   z-index: 3;
 }
 
 .navegacion {
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
-  grid-template-rows: 40px;
+  grid-template-columns: 45px 1fr 45px;
+  grid-template-rows: 45px;
 }
 
 .logotipo {
@@ -62,13 +61,12 @@ body.oscuro {
   justify-content: center;
   gap: 0.2rem;
 }
-.logotipo {
-  background-color: white;
-  padding: 5px;
-  border-radius: 10px;
-}
+
 .logotipo img {
-  width: 4.5rem;
+  width: 2.5rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .nav-op {
@@ -83,6 +81,12 @@ body.oscuro {
 
 .btn-nav {
   display: none;
+}
+.barra{
+  display: flex;
+}
+.barra svg{
+  align-self: center;
 }
 
 .barra-lateral {
@@ -140,11 +144,9 @@ body.oscuro {
   min-height: 32rem;
 }
 
-
 .sec:nth-child(odd) {
   background-color: #1e1e1e;
 }
-
 
 .principal .sec:first-child {
   justify-self: stretch;
@@ -180,15 +182,15 @@ body.oscuro {
   gap: 1rem;
 }
 
-.sec:nth-child(4){
+.sec:nth-child(4) {
   padding-inline: 1rem;
 }
-.nosotros{
+.nosotros {
   display: grid;
   justify-items: center;
 }
 
-.nosotros-contenido p{
+.nosotros-contenido p {
   text-align: center;
 }
 
@@ -273,7 +275,7 @@ body.oscuro {
 
 @media (width >= 992px) {
   .contenedor {
-    grid-template-rows: 80px 1fr auto;
+    grid-template-rows: 65px 1fr auto;
   }
 
   .cabecera {
@@ -286,6 +288,10 @@ body.oscuro {
   }
   .oscuro .cabecera {
     background-color: #242424;
+  }
+  .logotipo img {
+    width: 3.5rem;
+    min-height: 42px;
   }
 
   .navegacion {
@@ -313,6 +319,9 @@ body.oscuro {
   /* .principal {
     padding: 3rem;
   } */
+  .sec {
+    min-height: 90vh;
+  }
   .sec:first-child {
     padding: 0;
     min-height: 36rem;
@@ -327,12 +336,16 @@ body.oscuro {
     grid-template-areas: "promociones modelo";
     justify-content: center;
   }
-  .sec:nth-child(3){
+  .sec:nth-child(3) {
     padding-inline: 0;
+    align-content: center;
   }
-  
+
   .promociones {
     grid-area: promociones;
+  }
+  .promociones p{
+    max-width: 30ch;
   }
 
   .modelo {
@@ -357,23 +370,23 @@ body.oscuro {
     padding-inline: 0;
     grid-template-columns: auto 1fr;
   }
-  .sec:nth-child(4){
+  .sec:nth-child(4) {
     display: grid;
     justify-content: center;
   }
   .contenido-uno {
     display: grid;
-    grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr;
     grid-template-areas:
-      "nosotros equipo"
-      "contenido equipo";
+      "equipo nosotros"
+      "equipo contenido";
     gap: 1rem;
+    height: fit-content;
   }
   .nosotros {
     grid-area: nosotros;
   }
-  .nosotros{
+  .nosotros {
     justify-items: start;
   }
   .nosotros-contenido {
@@ -387,17 +400,16 @@ body.oscuro {
     grid-area: equipo;
   }
   .equipo img {
-    width: 250px;
+    width: 225px;
     border-radius: 20px;
   }
   .contenido-dos {
     display: grid;
-    
+
     grid-template-areas:
       "cliente cliente"
       "mision vision";
-      gap: 1rem;
-      row-gap: 2rem;
+    gap: 1rem;
   }
   .cliente {
     grid-area: cliente;
@@ -405,16 +417,16 @@ body.oscuro {
   .cliente p {
     max-width: 74ch;
   }
-  .mision{
+  .mision {
     grid-area: mision;
   }
-  .mision p{
+  .mision p {
     max-width: 48ch;
   }
-  .vision{
+  .vision {
     grid-area: vision;
   }
-  .vision p{
+  .vision p {
     max-width: 40ch;
   }
 
