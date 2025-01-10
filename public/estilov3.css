@@ -248,7 +248,6 @@ button {
   background-color: black;
   padding: 1rem;
   justify-content: center;
-  height: 90vh;
   align-content: center;
 }
 
@@ -472,6 +471,9 @@ button {
   }
 
   /* pie de pagina */
+  .pie-pagina{
+     height: 90vh;
+  }
 
   .contenido-caja {
     width: 80vw;
