@@ -76,3 +76,7 @@ barraModal.addEventListener("click", e => {
   const temaGuardado = localStorage.getItem("tema") || "oscuro"; // Oscuro por defecto
   document.body.classList.add(temaGuardado);
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  tema(); // Habilitar funcionalidad para cambiar el tema
+});
