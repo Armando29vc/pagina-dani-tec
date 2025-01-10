@@ -18,11 +18,22 @@ img {
   color-scheme: light dark;
 } */
 
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-bg: #242424;
+    --color-to: #1e1e1e;
+    --color-s: #96fcfd; /* color secundario */
+    --color-texto: #ffffff;
+    /* borde */
+    --color-borde-boton-uno: 2px solid #98b9d1;
+  }
+}
+
 body.claro {
   --color-bg: white;
   --color-tc: #ebebeb;
   --color-s: #032f72; /* color secundario */
-  color: black;
+  --color-texto: black;
   /* borde */
   --color-borde-boton-uno: 2px solid #045f91;
 }
@@ -31,7 +42,7 @@ body.oscuro {
   --color-bg: #242424;
   --color-to: #1e1e1e;
   --color-s: #96fcfd; /* color secundario */
-  color: rgba(255, 255, 255, 0.87);
+  --color-texto: #ffffff;
   /* borde */
   --color-borde-boton-uno: 2px solid #98b9d1;
 }
@@ -40,6 +51,7 @@ body {
   min-height: 100dvh;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-bg);
+  color: var(--color-texto);
 }
 
 button {

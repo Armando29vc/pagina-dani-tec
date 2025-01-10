@@ -1,5 +1,6 @@
-notas.txt
 .env
+//ignora lo irrelevante
+papelera
+notas
 
-seccion3.txt
-tema.txt
+tema.js

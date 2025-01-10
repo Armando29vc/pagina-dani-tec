@@ -17,11 +17,6 @@
 
     <link rel="stylesheet" href="public/estilo.css" />
     <link rel="stylesheet" href="public/armando.css" />
-    <script>
-      // Aplicar tema antes de cargar estilos
-      const temaGuardado = localStorage.getItem("tema") || "oscuro";
-      document.documentElement.classList.add(temaGuardado);
-    </script>
   </head>
   <body>
     <div class="contenedor">
@@ -92,6 +87,43 @@
                   d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680v400Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"
                 />
               </svg>
+              <script>
+                //Script de jonmircha
+                //https://jonmircha.com/
+                (function (d, w, ls) {
+                  const $btn = d.querySelector(".tema");
+                  let prefersDark = w.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                  ).matches;
+
+                  function claro() {
+                    ls.setItem("tema", "claro");
+                    d.body.classList.add("claro");
+                    d.body.classList.remove("oscuro");
+                  }
+
+                  function oscuro() {
+                    ls.setItem("tema", "oscuro");
+                    d.body.classList.remove("claro");
+                    d.body.classList.add("oscuro");
+                  }
+
+                  if (ls.getItem("tema") === null) {
+                    if (prefersDark) {
+                      ls.setItem("tema", "oscuro");
+                    } else {
+                      ls.setItem("tema", "claro");
+                    }
+                  }
+
+                  if (ls.getItem("tema") === "oscuro") oscuro();
+                  if (ls.getItem("tema") === "claro") claro();
+
+                  $btn.addEventListener("click", e =>
+                    ls.getItem("tema") === "oscuro" ? claro() : oscuro()
+                  );
+                })(document, window, localStorage);
+              </script>
             </div>
           </div>
         </nav>

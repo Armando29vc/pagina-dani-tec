@@ -1,30 +1,3 @@
-import { tema } from "./tema.js";
-
-export function actualizarImagen() {
-  // const imgCabecera = document.querySelector(".img-cabecera");
-  const imgCabecera = document.querySelector(".imagen-cliente img");
-
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    // Pantalla mayor o igual a 768px
-    // imgCabecera.src = "public/promo_mes_2_4.webp";
-
-    localStorage.getItem("tema") === "claro"
-      ? (imgCabecera.src = "public/imagen 2c.png")
-      : (imgCabecera.src = "public/imagen 2o.png");
-  } else {
-    // Pantalla menor a 768px
-    // imgCabecera.src = "public/promo_mes_2_4_mobile.webp";
-    localStorage.getItem("tema") === "claro"
-      ? (imgCabecera.src = "public/imagen 1c.png")
-      : (imgCabecera.src = "public/imagen 1o.png");
-  }
-}
-
-//actualizarImagen();
-
-// Escuchar cambios en el tamaño de la pantalla
-//window.addEventListener("resize", actualizarImagen);
-
 const barra = document.querySelector(".barra");
 const barraModal = document.querySelector(".barra-lateral");
 const barraCerrar = document.querySelector(".cerrar");
@@ -68,15 +41,4 @@ barraCerrar.addEventListener("click", e => {
 
 barraModal.addEventListener("click", e => {
   e.stopPropagation();
-});
-
-/* Opacar */
-
-(function aplicarTemaInicial() {
-  const temaGuardado = localStorage.getItem("tema") || "oscuro"; // Oscuro por defecto
-  document.body.classList.add(temaGuardado);
-})();
-
-document.addEventListener("DOMContentLoaded", () => {
-  tema(); // Habilitar funcionalidad para cambiar el tema
 });
