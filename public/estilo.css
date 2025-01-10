@@ -295,6 +295,10 @@ button {
   width: 25px;
   transition: transform 0.3s ease;
 }
+.social {
+  display: grid;
+  gap: 0.5rem;
+}
 
 @media (width >= 992px) {
   .contenedor {
@@ -471,8 +475,8 @@ button {
   }
 
   /* pie de pagina */
-  .pie-pagina{
-     height: 90vh;
+  .pie-pagina {
+    height: 90vh;
   }
 
   .contenido-caja {
@@ -504,10 +508,6 @@ button {
   }
   .social {
     grid-area: social;
-  }
-  .social {
-    display: grid;
-    gap: 0.5rem;
   }
   .logo-masconect {
     width: 150px;
