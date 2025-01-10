@@ -213,6 +213,15 @@ button {
   text-align: center;
 }
 
+.equipo {
+  display: flex;
+  justify-content: center;
+}
+.equipo img {
+  border-radius: 20px;
+  width: 250px;
+}
+
 .imagen-cliente {
   grid-row: 1 / 2;
 }
