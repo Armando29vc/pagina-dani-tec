@@ -20,11 +20,13 @@ img {
 
 body.claro {
   --color-bg: white;
+  --color-tc: #ebebeb;
   color: black;
 }
 
 body.oscuro {
   --color-bg: #242424;
+  --color-to: #1e1e1e;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -34,10 +36,7 @@ body {
   background-color: var(--color-bg);
 }
 
-.claro button {
-  color: black;
-}
-.oscuro button {
+button {
   color: white;
 }
 
@@ -48,7 +47,7 @@ body {
 
 /* cabecera */
 .cabecera {
-  z-index: 3;
+  z-index: 999;
 }
 
 .navegacion {

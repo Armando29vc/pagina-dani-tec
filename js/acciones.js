@@ -72,21 +72,7 @@ barraModal.addEventListener("click", e => {
 
 /* Opacar */
 
-document.addEventListener("DOMContentLoaded", e => {
-  // Si no hay tema guardado, establecer el tema claro por defecto
-  if (localStorage.getItem("tema") === null) {
-    localStorage.setItem("tema", "claro");
-  }
-
-  // Aplicar el tema guardado en localStorage
-  if (localStorage.getItem("tema") === "claro") {
-    document.body.classList.add("claro");
-    document.body.classList.remove("oscuro");
-  } else {
-    document.body.classList.add("oscuro");
-    document.body.classList.remove("claro");
-  }
-
-  // Llamar a la función para permitir cambiar el tema
-  tema();
-});
+(function aplicarTemaInicial() {
+  const temaGuardado = localStorage.getItem("tema") || "oscuro"; // Oscuro por defecto
+  document.body.classList.add(temaGuardado);
+})();
