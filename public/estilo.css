@@ -18,20 +18,23 @@ img {
   color-scheme: light dark;
 } */
 
-body {
-  min-height: 100dvh;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 body.claro {
-  background-color: white;
+  --color-bg: white;
   color: black;
 }
 
 body.oscuro {
-  background-color: #242424;
+  --color-bg: #242424;
   color: rgba(255, 255, 255, 0.87);
 }
+
+body {
+  min-height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+}
+
 .claro button {
   color: black;
 }
@@ -288,12 +291,10 @@ body.oscuro {
     position: sticky;
     top: 0;
   }
-  .claro .cabecera {
-    background-color: #ffffff;
+  .cabecera {
+     background-color: var(--color-bg);
   }
-  .oscuro .cabecera {
-    background-color: #242424;
-  }
+
   .logotipo img {
     width: 3.5rem;
     min-height: 42px;
