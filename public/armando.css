@@ -1,7 +1,6 @@
 :root {
   /*   --borde-boton-o: 2px solid #1ffd85;*/
-  --borde-boton-o: 2px solid #98b9d1;
-  --borde-boton-c: 2px solid #045f91;
+
   --relleno-1: 1rem;
   --margen-1: 1rem;
   /* --color-po: #00792a; */ /* color primario oscuro */
@@ -47,10 +46,7 @@
 }
 
 .borde-boton {
-  border-bottom: var(--borde-boton-o);
-}
-.claro .borde-boton {
-  border-bottom: var(--borde-boton-c);
+  border-bottom: var(--color-borde-boton-uno);
 }
 
 .peso-fuente-gruesa {

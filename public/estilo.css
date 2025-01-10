@@ -23,6 +23,8 @@ body.claro {
   --color-tc: #ebebeb;
   --color-s: #032f72; /* color secundario */
   color: black;
+  /* borde */
+  --color-borde-boton-uno: 2px solid #045f91;
 }
 
 body.oscuro {
@@ -30,6 +32,8 @@ body.oscuro {
   --color-to: #1e1e1e;
   --color-s: #96fcfd; /* color secundario */
   color: rgba(255, 255, 255, 0.87);
+  /* borde */
+  --color-borde-boton-uno: 2px solid #98b9d1;
 }
 
 body {
@@ -260,9 +264,7 @@ button {
 .caja-op li a:hover {
   color: #24f2f5;
 }
-.claro .caja-op li a:hover {
-  color: #af0290;
-}
+
 
 .li-contacto p,
 .social p {
