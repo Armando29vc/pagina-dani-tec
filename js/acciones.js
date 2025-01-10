@@ -43,7 +43,6 @@ barraModal.addEventListener("click", e => {
   e.stopPropagation();
 });
 
-
 //navegacion
 document.querySelectorAll(".btn-nav").forEach(button => {
   button.addEventListener("click", function (e) {
