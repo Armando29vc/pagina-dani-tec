@@ -42,3 +42,34 @@ barraCerrar.addEventListener("click", e => {
 barraModal.addEventListener("click", e => {
   e.stopPropagation();
 });
+
+
+
+
+
+//navegacion
+document.querySelectorAll(".btn-nav").forEach(button => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto
+
+    // Elimina la clase 'activo' de todos los botones
+    document
+      .querySelectorAll(".btn-nav")
+      .forEach(btn => btn.classList.remove("activo"));
+
+    // Añade la clase 'activo' al botón que fue clickeado
+    button.classList.add("activo");
+
+    const targetId = button.getAttribute("data-target"); // Obtiene el ID del destino
+    const targetElement = document.querySelector(targetId); // Selecciona el elemento de destino
+
+    if (targetElement) {
+      const headerHeight = 65; // Altura de la cabecera fija
+
+      window.scrollTo({
+        top: targetElement.offsetTop - headerHeight, // Ajuste para la cabecera
+        behavior: "smooth",
+      });
+    }
+  });
+});

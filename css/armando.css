@@ -30,6 +30,10 @@
   background-color: var(--color-po-hover);
 }
 
+.activo {
+  background-color: var(--color-po-hover);
+}
+
 .claro .hover\:btn-primario:hover {
   background-color: var(--color-pc-hover);
 }

@@ -26,6 +26,7 @@ img {
     --color-texto: #ffffff;
     /* borde */
     --color-borde-boton-uno: 2px solid #98b9d1;
+    --sombra-uno: #141414;
   }
 }
 
@@ -36,6 +37,7 @@ body.claro {
   --color-texto: black;
   /* borde */
   --color-borde-boton-uno: 2px solid #045f91;
+  --sombra-uno: #c3c3c3;
 }
 
 body.oscuro {
@@ -45,6 +47,7 @@ body.oscuro {
   --color-texto: #ffffff;
   /* borde */
   --color-borde-boton-uno: 2px solid #98b9d1;
+  --sombra-uno: #141414;
 }
 
 body {
@@ -182,10 +185,6 @@ button {
 
 .info {
   display: grid;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-inline: 1rem;
-  /* text-align: center; */
 }
 
 .info p {
@@ -240,33 +239,48 @@ button {
   max-width: 250px;
 }
 
-.imagen-cliente {
-  grid-row: 1 / 2;
+/* seccion 5 */
+.sec:nth-child(5) h2:first-child{
+  text-align: center;
 }
 
-.contacto-info h3 {
-  font-size: 1rem;
-}
-
-.horario-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.tel-info,
-.ubicacion-info,
-.llamada-info {
+.caja {
   display: grid;
-  grid-template-columns: 40px 1fr;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  padding: 1rem;
+  gap: 2rem;
 }
 
-.ubicacion-info p {
-  max-width: 35ch;
+.tarjeta {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-template-columns: 30px auto;
+  grid-template-areas:
+    "numero pregunta"
+    "respuesta respuesta";
+  padding: 1rem;
+  gap: 1rem;
+}
+.tarjeta {
+  /* border: 2px solid var(--color-s); */
+  box-shadow: 4px 4px 10px var(--sombra-uno);
+}
+
+.tarjeta:nth-child(3) .respuesta,
+.tarjeta:nth-child(4) .respuesta{
+  display: grid;
+  gap: 1rem;
+}
+
+.numero {
+  grid-area: numero;
+}
+.pregunta {
+  grid-area: pregunta;
+}
+.respuesta {
+  grid-area: respuesta;
 }
 
 /* Diseño del pie de pagina */
