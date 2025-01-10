@@ -1,7 +1,7 @@
 :root {
   /*   --borde-boton-o: 2px solid #1ffd85;*/
   --borde-boton-o: 2px solid #98b9d1;
-  --borde-boton-c: 2px solid #f91ffd;
+  --borde-boton-c: 2px solid #045f91;
   --relleno-1: 1rem;
   --margen-1: 1rem;
   /* --color-po: #00792a; */ /* color primario oscuro */
@@ -9,10 +9,10 @@
   --color-so: #96fcfd; /* color secundario oscuro */
   --color-to: #1e1e1e;
   --color-po-hover: #002357;
-  --color-pc: #d100ac; /* color primario claro */
+  --color-pc: #045f91; /* color primario claro */
   --color-sc: #c810a6; /* color secundario claro */
   --color-tc: #ebebeb;
-  --color-pc-hover: #9a007e;
+  --color-pc-hover: #032f72;
   
 
   /* tipografia */
