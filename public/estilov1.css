@@ -193,6 +193,13 @@ button {
   padding-inline: 1rem;
   gap: 1rem;
 }
+.modelo {
+  display: grid;
+  justify-content: center;
+}
+.modelo img {
+  width: 225px;
+}
 
 .sec:nth-child(4) {
   padding-inline: 1rem;
