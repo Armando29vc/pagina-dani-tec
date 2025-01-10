@@ -82,10 +82,10 @@ body.oscuro {
 .btn-nav {
   display: none;
 }
-.barra{
+.barra {
   display: flex;
 }
-.barra svg{
+.barra svg {
   align-self: center;
 }
 
@@ -229,6 +229,8 @@ body.oscuro {
   background-color: #171717;
   padding: 1rem;
   justify-content: center;
+  height: 90vh;
+  align-content: center;
 }
 .claro .pie-pagina {
   background-color: #dfdfdf;
@@ -344,7 +346,7 @@ body.oscuro {
   .promociones {
     grid-area: promociones;
   }
-  .promociones p{
+  .promociones p {
     max-width: 30ch;
   }
 
