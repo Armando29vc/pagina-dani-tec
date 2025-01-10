@@ -5,18 +5,17 @@
   --margen-1: 1rem;
   /* --color-po: #00792a; */ /* color primario oscuro */
   --color-po: #032f72; /* color primario oscuro */
-   /* color secundario oscuro */
-  
+  /* color secundario oscuro */
+
   --color-po-hover: #002357;
   --color-pc: #045f91; /* color primario claro */
-  
-  
+
   --color-pc-hover: #032f72;
-  
 
   /* tipografia */
   --fuente-negrita: bold;
   /* tamaños */
+  /* color */
 }
 
 /* colores */
@@ -26,7 +25,6 @@
 .claro .btn-primario {
   background-color: var(--color-pc);
 }
-
 
 .hover\:btn-primario:hover {
   background-color: var(--color-po-hover);
@@ -93,6 +91,12 @@
 .m\:texto-base {
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
+}
+
+/* color */
+
+.texto-color-azul {
+  color: var(--color-s);
 }
 
 @media (width >= 992px) {
