@@ -138,6 +138,7 @@ button {
 .tema {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /* Contenido Principal */
@@ -265,7 +266,6 @@ button {
   color: #24f2f5;
 }
 
-
 .li-contacto p,
 .social p {
   color: white;
@@ -281,6 +281,13 @@ button {
   grid-template-columns: 24px 1fr;
   align-items: center;
   gap: 0.5rem;
+}
+.logo-masconect {
+  width: 150px;
+}
+.facebook {
+  width: 25px;
+  transition: transform 0.3s ease;
 }
 
 @media (width >= 992px) {
