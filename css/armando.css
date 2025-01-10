@@ -17,6 +17,16 @@
   /* tamaños */
   /* color */
 }
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 /* colores */
 .btn-primario {
@@ -30,8 +40,8 @@
   background-color: var(--color-po-hover);
 }
 
-.activo {
-  background-color: var(--color-po-hover);
+.actual {
+  background-color: #002357 !important;
 }
 
 .claro .hover\:btn-primario:hover {

@@ -171,6 +171,11 @@ button {
 .sec:first-child {
   user-select: none;
 }
+.img-velocidad {
+  animation: aparecer 1s ease-in-out forwards;
+  opacity: 0;
+}
+
 
 .oscuro .sec:nth-child(odd) {
   background-color: var(--color-to);
@@ -384,14 +389,14 @@ button {
     padding: 3rem;
   } */
   .sec {
-    min-height: 90vh;
+    min-height: 92vh;
   }
   .sec:first-child {
     padding: 0;
-    min-height: 36rem;
+    /* min-height: 36rem; */
   }
   .sec:first-child img {
-    max-height: 90vh;
+    max-height: 92vh;
     object-fit: cover;
   }
 
