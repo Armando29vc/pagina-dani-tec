@@ -30,7 +30,7 @@ img {
 }
 
 body.claro {
-  --color-bg: white;
+  --color-bg: #fff;
   --color-tc: #ebebeb;
   --color-s: #032f72; /* color secundario */
   --color-texto: black;
@@ -55,7 +55,7 @@ body {
 }
 
 button {
-  color: white;
+  color: #fff;
 }
 
 .contenedor {
@@ -88,7 +88,7 @@ button {
 
 .logotipo img {
   width: 2.5rem;
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   padding: 5px;
 }
@@ -100,7 +100,7 @@ button {
 }
 
 .claro .nav-op button {
-  color: white;
+  color: #fff;
 }
 
 .btn-nav {
@@ -124,7 +124,7 @@ button {
   transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave */
 }
 .claro .barra-lateral {
-  background-color: white;
+  background-color: #fff;
 }
 
 .barra-lateral.activo {
@@ -301,7 +301,7 @@ button {
 
 .li-contacto p,
 .social p {
-  color: white;
+  color: #fff;
 }
 
 .li-contacto,
