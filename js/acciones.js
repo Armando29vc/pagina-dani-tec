@@ -44,9 +44,6 @@ barraModal.addEventListener("click", e => {
 });
 
 
-
-
-
 //navegacion
 document.querySelectorAll(".btn-nav").forEach(button => {
   button.addEventListener("click", function (e) {
@@ -55,10 +52,10 @@ document.querySelectorAll(".btn-nav").forEach(button => {
     // Elimina la clase 'activo' de todos los botones
     document
       .querySelectorAll(".btn-nav")
-      .forEach(btn => btn.classList.remove("activo"));
+      .forEach(btn => btn.classList.remove("actual"));
 
     // Añade la clase 'activo' al botón que fue clickeado
-    button.classList.add("activo");
+    button.classList.add("actual");
 
     const targetId = button.getAttribute("data-target"); // Obtiene el ID del destino
     const targetElement = document.querySelector(targetId); // Selecciona el elemento de destino

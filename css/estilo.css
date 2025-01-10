@@ -91,6 +91,7 @@ button {
 
 .logotipo img {
   width: 2.5rem;
+  height: auto;
   background-color: #fff;
   border-radius: 10px;
   padding: 5px;
