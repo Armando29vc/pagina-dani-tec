@@ -14,10 +14,6 @@ img {
   width: 100%;
 }
 
-/* :root {
-  color-scheme: light dark;
-} */
-
 @media (prefers-color-scheme: dark) {
   body {
     --color-bg: #242424;
