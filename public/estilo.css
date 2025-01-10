@@ -144,8 +144,11 @@ body.oscuro {
   min-height: 32rem;
 }
 
-.sec:nth-child(odd) {
-  background-color: #1e1e1e;
+.oscuro .sec:nth-child(odd) {
+  background-color: var(--color-to);
+}
+.claro .sec:nth-child(odd) {
+  background-color: var(--color-tc);
 }
 
 .principal .sec:first-child {
