@@ -149,7 +149,6 @@ button {
 }
 
 .sec:first-child {
-  min-height: 32rem;
   user-select: none;
 }
 
@@ -189,6 +188,7 @@ button {
   font-size: 1.5rem;
 }
 
+/* modificando la seccion 3 */
 .sec:nth-child(3) {
   padding-inline: 1rem;
   gap: 1rem;
