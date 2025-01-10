@@ -198,7 +198,7 @@ button {
   justify-content: center;
 }
 .modelo img {
-  width: 200px;
+   width: 200px;
 }
 
 .sec:nth-child(4) {
@@ -219,7 +219,8 @@ button {
 }
 .equipo img {
   border-radius: 20px;
-  width: 250px;
+  min-width: 225px;
+  max-width: 250px;
 }
 
 .imagen-cliente {
@@ -388,7 +389,6 @@ button {
   }
 
   .modelo img {
-    width: 200px;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
   }
 
@@ -435,7 +435,6 @@ button {
     grid-area: equipo;
   }
   .equipo img {
-    width: 225px;
     border-radius: 20px;
   }
   .contenido-dos {
