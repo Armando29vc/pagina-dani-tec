@@ -21,12 +21,14 @@ img {
 body.claro {
   --color-bg: white;
   --color-tc: #ebebeb;
+  --color-s: #032f72; /* color secundario */
   color: black;
 }
 
 body.oscuro {
   --color-bg: #242424;
   --color-to: #1e1e1e;
+  --color-s: #96fcfd; /* color secundario */
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -143,6 +145,7 @@ button {
 
 .sec:first-child {
   min-height: 32rem;
+  user-select: none;
 }
 
 .oscuro .sec:nth-child(odd) {
@@ -230,17 +233,11 @@ button {
 /* Diseño del pie de pagina */
 .pie-pagina {
   display: grid;
-  background-color: #171717;
+  background-color: black;
   padding: 1rem;
   justify-content: center;
   height: 90vh;
   align-content: center;
-}
-.claro .pie-pagina {
-  background-color: #dfdfdf;
-}
-.claro .pie-pagina a {
-  color: black;
 }
 
 .titulo {
@@ -265,6 +262,11 @@ button {
 }
 .claro .caja-op li a:hover {
   color: #af0290;
+}
+
+.li-contacto p,
+.social p {
+  color: white;
 }
 
 .li-contacto,

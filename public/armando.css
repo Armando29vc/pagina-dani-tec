@@ -6,11 +6,11 @@
   --margen-1: 1rem;
   /* --color-po: #00792a; */ /* color primario oscuro */
   --color-po: #032f72; /* color primario oscuro */
-  --color-so: #96fcfd; /* color secundario oscuro */
+   /* color secundario oscuro */
   
   --color-po-hover: #002357;
   --color-pc: #045f91; /* color primario claro */
-  --color-sc: #c810a6; /* color secundario claro */
+  
   
   --color-pc-hover: #032f72;
   
@@ -38,16 +38,12 @@
 }
 
 .color-texto-primario {
-  color: var(--color-so);
-  font-weight: bold;
-}
-.claro .color-texto-primario {
-  color: var(--color-sc);
+  color: #96fcfd;
   font-weight: bold;
 }
 
-.claro .svg-color-primario {
-  fill: var(--color-sc);
+.svg-color-primario {
+  fill: var(--color-s);
 }
 
 .borde-boton {
