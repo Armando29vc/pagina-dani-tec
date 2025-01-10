@@ -18,7 +18,6 @@ img {
   color-scheme: light dark;
 } */
 
-
 body.claro {
   --color-bg: white;
   color: black;
@@ -292,7 +291,7 @@ body {
     top: 0;
   }
   .cabecera {
-     background-color: var(--color-bg);
+    background-color: var(--color-bg);
   }
 
   .logotipo img {
