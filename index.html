@@ -17,8 +17,13 @@
 
     <link rel="stylesheet" href="public/estilo.css" />
     <link rel="stylesheet" href="public/armando.css" />
+    <script>
+      // Aplicar tema antes de cargar estilos
+      const temaGuardado = localStorage.getItem("tema") || "oscuro";
+      document.documentElement.classList.add(temaGuardado);
+    </script>
   </head>
-  <body class="oscuro">
+  <body>
     <div class="contenedor">
       <header class="cabecera m-cuadricula borde-boton">
         <nav class="navegacion">
@@ -121,8 +126,12 @@
         <section class="sec margen-ar-1 margen-ab-1">
           <div class="contenido-uno">
             <div class="nosotros">
-              <p class="texto-xl m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0">Historia</p>
-              <h2 class="texto-3xl  m:margen-ab-1 margen-ab-0">Nosotros</h2>
+              <p
+                class="texto-xl m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0"
+              >
+                Historia
+              </p>
+              <h2 class="texto-3xl m:margen-ab-1 margen-ab-0">Nosotros</h2>
             </div>
             <div class="nosotros-contenido">
               <p class="texto-2xl">
@@ -131,14 +140,18 @@
                 enfrente su empresa o negocio, en el área informática.
               </p>
             </div>
-            <div class="equipo m:margen-ar-1 m:margen-ab-1  margen-ar-0 margen-ab-0">
+            <div
+              class="equipo m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0"
+            >
               <img src="img/equipo.webp" alt="" />
             </div>
           </div>
           <div class="contenido-dos">
             <div class="cliente">
               <h3 class="f-negrita m:texto-xs texto-xl">Clientes</h3>
-              <p class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1  margen-ar-0 margen-ab-0">
+              <p
+                class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0"
+              >
                 MASCONET ofrece una variedad de servicios y productos, todo ello
                 con la más alta calidad, y esto es gracias a las relaciones con
                 las mejores marcas, líderes en tecnología, reconocidas
@@ -149,7 +162,9 @@
             </div>
             <div class="mision">
               <h3 class="f-negrita m:texto-xs texto-xl">Misión</h3>
-              <p class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1  margen-ar-0 margen-ab-0">
+              <p
+                class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0"
+              >
                 Orientar a las organizaciones en el desarrollo continuo de
                 mejores relaciones con sus clientes, apoyándolas en la
                 consecución de sus objetivos corporativos. Contribuyendo con
@@ -159,7 +174,9 @@
             </div>
             <div class="vision">
               <h3 class="f-negrita m:texto-xs texto-xl">Visión</h3>
-              <p class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1  margen-ar-0 margen-ab-0">
+              <p
+                class="m:texto-sm texto-base m:margen-ar-1 m:margen-ab-1 margen-ar-0 margen-ab-0"
+              >
                 Nuestra visión es convertirnos en la compañía que establezca el
                 punto de referencia y estándares para el desarrollo de proyectos
                 relacionados con la gestión de las relaciones con clientes en
