@@ -18,11 +18,15 @@ img {
   body {
     --color-bg: #242424;
     --color-to: #1e1e1e;
+
     --color-s: #96fcfd; /* color secundario */
     --color-texto: #ffffff;
+    --color-texto-dos: #000;
     /* borde */
     --color-borde-boton-uno: 2px solid #98b9d1;
     --sombra-uno: #141414;
+
+    --color-alerta: #fff;
   }
 }
 
@@ -30,10 +34,13 @@ body.claro {
   --color-bg: #fff;
   --color-tc: #ebebeb;
   --color-s: #032f72; /* color secundario */
-  --color-texto: black;
+  --color-texto: #000;
+  --color-texto-dos: #fff;
   /* borde */
   --color-borde-boton-uno: 2px solid #045f91;
   --sombra-uno: #c3c3c3;
+
+  --color-alerta: #000;
 }
 
 body.oscuro {
@@ -41,9 +48,12 @@ body.oscuro {
   --color-to: #1e1e1e;
   --color-s: #96fcfd; /* color secundario */
   --color-texto: #ffffff;
+  --color-texto-dos: #000;
   /* borde */
   --color-borde-boton-uno: 2px solid #98b9d1;
   --sombra-uno: #141414;
+
+  --color-alerta: #fff;
 }
 
 body {
@@ -173,7 +183,6 @@ button {
   opacity: 0;
 }
 
-
 .oscuro .sec:nth-child(odd) {
   background-color: var(--color-to);
 }
@@ -242,7 +251,7 @@ button {
 }
 
 /* seccion 5 */
-.sec:nth-child(5) h2:first-child{
+.sec:nth-child(5) h2:first-child {
   text-align: center;
 }
 
@@ -270,7 +279,7 @@ button {
 }
 
 .tarjeta:nth-child(3) .respuesta,
-.tarjeta:nth-child(4) .respuesta{
+.tarjeta:nth-child(4) .respuesta {
   display: grid;
   gap: 1rem;
 }
@@ -283,6 +292,75 @@ button {
 }
 .respuesta {
   grid-area: respuesta;
+}
+
+/* seccion 6 */
+.sec:nth-child(6) h2:first-child {
+  text-align: center;
+}
+
+.tarjetita {
+  display: grid;
+  width: fit-content;
+  grid-template-areas:
+    "vector titulo"
+    "vector info";
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+.vector {
+  grid-area: vector;
+}
+.tarjetita-titulo {
+  grid-area: titulo;
+}
+.tarjetita-info {
+  grid-area: info;
+}
+
+.formulario-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.form-contacto {
+  display: grid;
+  width: 21rem;
+  height: 21rem;
+  padding: 2rem;
+  gap: 1rem;
+  box-shadow: 4px 4px 10px var(--sombra-uno);
+  align-items: center;
+  border-radius: 20px;
+  background-color: #6ba0a1;
+}
+
+
+.form-contacto .btn-enviar {
+  justify-self: center;
+}
+
+.form-contacto textarea {
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.form-contacto input:nth-child(3) {
+  border: none;
+}
+
+.mensaje {
+  resize: none;
+}
+.btn-enviar {
+  display: block;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  height: fit-content;
 }
 
 /* Diseño del pie de pagina */
@@ -494,23 +572,12 @@ button {
     max-width: 40ch;
   }
 
-  .contacto-info h3 {
-    font-size: 1.5rem;
-  }
-  .horario-info p {
-    font-weight: bold;
-  }
-
-  .ubicacion-info p {
-    max-width: 50ch;
-  }
-
-  .imagen-cliente {
-    display: flex;
+  /* seccion 6 */
+  .sec-contacto {
+    display: grid;
     align-items: center;
-  }
-  .imagen-cliente {
-    grid-column: 2 / 3;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
   }
 
   /* pie de pagina */
@@ -521,8 +588,6 @@ button {
   .contenido-caja {
     width: 80vw;
     display: grid;
-    /*   grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
     grid-template-areas:
       "legales soporte contacto"
       "legales social servicios"

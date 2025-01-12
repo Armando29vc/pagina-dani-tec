@@ -26,8 +26,6 @@
   }
 }
 
-
-
 /* colores */
 .btn-primario {
   background-color: var(--color-po);
@@ -113,6 +111,55 @@
   color: var(--color-s);
 }
 
+/* Estilo para la alerta */
+.fijo {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: var(--color-alerta);
+  color: var(--color-texto-dos);
+  font-weight: bold;
+  padding: 1rem;
+  box-shadow: 4px 4px 10px var(--sombra-uno);
+  gap: 0.5rem;
+  z-index: 9999;
+  font-size: 1rem;
+}
+.fijo {
+  /* top: 80px; */
+  top: 70px;
+  right: 20px;
+}
+
+.sec-alerta:nth-child(2) {
+  color: #ff0000;
+}
+
+/* Estilo para la línea de tiempo (barra de progreso) */
+.fijo .barra-progreso {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  /* background-color: var(--color-s); */
+  background-color: #ff0000;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  animation: progreso 3s linear forwards; /* Duración del temporizador */
+}
+
+/* Animación para la barra de progreso */
+@keyframes progreso {
+  from {
+    width: 100%;
+  }
+  to {
+    /* width: 0; */
+    width: 20%;
+  }
+}
+
 @media (width >= 992px) {
   .margen-ar-0 {
     margin-top: 0;
@@ -160,5 +207,12 @@
   .texto-4xl {
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
+  }
+
+  /* alertas */
+  .fijo {
+    top: 70px;
+    left: auto;
+    right: 20px;
   }
 }
