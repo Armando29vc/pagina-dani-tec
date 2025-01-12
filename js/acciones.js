@@ -1,3 +1,5 @@
+import whatsapp from "./whatsapp.js";
+
 const barra = document.querySelector(".barra");
 const barraModal = document.querySelector(".barra-lateral");
 const barraCerrar = document.querySelector(".cerrar");
@@ -69,3 +71,12 @@ document.querySelectorAll(".btn-nav").forEach(button => {
     }
   });
 });
+
+
+
+const enviar = document.querySelector(".form-contacto");
+
+enviar?.addEventListener("submit", function (e) {
+  whatsapp(e, enviar);
+});
+
