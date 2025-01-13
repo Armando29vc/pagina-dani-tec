@@ -25,6 +25,17 @@
     opacity: 1;
   }
 }
+@keyframes velocidad {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 /* colores */
 .btn-primario {
@@ -103,6 +114,11 @@
 .m\:texto-base {
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
+}
+
+.m\:texto-5xl {
+  font-size: 3rem; /* 48px */
+  line-height: 1rem;
 }
 
 /* color */
@@ -207,6 +223,14 @@
   .texto-4xl {
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
+  }
+  .texto-5xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1rem;
+  }
+  .texto-6xl {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
   }
 
   /* alertas */
