@@ -234,7 +234,6 @@ button {
 /* modificando la seccion 2 */
 .sec:nth-child(2) {
   text-align: center;
-  display: none;
 }
 .paquetes {
   display: grid;
