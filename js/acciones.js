@@ -1,4 +1,7 @@
 import whatsapp from "./whatsapp.js";
+import animacionVelocidad from "./velocidad.js";
+
+animacionVelocidad()
 
 const barra = document.querySelector(".barra");
 const barraModal = document.querySelector(".barra-lateral");
@@ -71,8 +74,6 @@ document.querySelectorAll(".btn-nav").forEach(button => {
     }
   });
 });
-
-
 
 const enviar = document.querySelector(".form-contacto");
 
