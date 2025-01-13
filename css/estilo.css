@@ -84,7 +84,7 @@ button {
 .cabecera {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 4;
 }
 
 .navegacion {
@@ -138,6 +138,23 @@ button {
   opacity: 0; /* Invisible al principio */
   transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave */
 }
+.barra-lateral.activo {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto 1fr;
+}
+
+.barra-lateral.activo .nav-op {
+  display: grid;
+  align-self: start;
+  gap: 1rem;
+}
+.barra-lateral.activo .btn-nav {
+  display: block;
+  padding: 1rem;
+  border: none;
+}
+
 .claro .barra-lateral {
   background-color: #fff;
 }
@@ -145,7 +162,7 @@ button {
 .barra-lateral.activo {
   transform: translateX(100%); /* Mueve la barra lateral hacia adentro */
   opacity: 1; /* Hace la barra visible */
-  z-index: 3;
+  z-index: 5;
 }
 .cerrar {
   padding: 0.5rem;
@@ -160,7 +177,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  z-index: 2;
+  z-index: 4;
 }
 
 .opacar {
@@ -217,6 +234,7 @@ button {
 /* modificando la seccion 2 */
 .sec:nth-child(2) {
   text-align: center;
+  display: none;
 }
 .paquetes {
   display: grid;
@@ -379,14 +397,16 @@ button {
 
 .form-contacto {
   display: grid;
-  width: 21rem;
-  height: 21rem;
   padding: 2rem;
   gap: 1rem;
   box-shadow: 4px 4px 10px var(--sombra-uno);
   align-items: center;
   border-radius: 20px;
   background-color: #6ba0a1;
+}
+.form-contacto {
+  width: 15rem;
+  height: 15rem;
 }
 
 .form-contacto .btn-enviar {
@@ -498,6 +518,9 @@ button {
   }
   .barra {
     display: none;
+  }
+  .barra-lateral.activo{
+    display: none !important;
   }
 
   .nav-op {
@@ -630,6 +653,10 @@ button {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+  }
+  .form-contacto {
+    width: 21rem;
+    height: 21rem;
   }
 
   /* pie de pagina */
