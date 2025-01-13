@@ -52,14 +52,14 @@
               </div>
             </div>
           </div>
-          <div class="logotipo">
+          <a href="index.html" class="logotipo">
             <img
               src="img/logo-transparente-color.webp"
               alt="logo transparente a color"
               width="100%"
               height="100%"
             />
-          </div>
+          </a>
           <div class="nav-op">
             <button
               class="btn-nav btn-primario f-negrita hover:btn-primario"
@@ -163,20 +163,22 @@
           />
         </section>
         <section id="seccion1" class="sec relleno-1">
-          <div class="info">
-            <h2 class="texto-4xl">Paquetes y Precios</h2>
-            <div class="paquetes">
-              <div class="caja-paquete">
-                  <h2>Paquete 1</h2>
-                  <h3>20 MB</h3>
-                  <p>velocidad</p>
-                  <p>A solo $300</p>
+          <h2 class="texto-4xl">Paquetes y Precios</h2>
+          <div class="paquetes relleno-1">
+            <div class="caja-paquete">
+              <div class="paquete-sec1">
+                <h3 class="texto-4xl">20 MB</h3>
               </div>
-              <div class="caja-paquete">
-                  <h2>Paquete 2</h2>
-                  <h3>30 MB</h3>
-                  <p>velocidad</p>
-                  <p>A solo $400</p>
+              <div class="paquete-sec2 ">
+                <p class="texto-3xl">$300</p>
+              </div>
+            </div>
+            <div class="caja-paquete">
+              <div class="paquete-sec1">
+                <h3 class="texto-4xl">30 MB</h3>
+              </div>
+              <div class="paquete-sec2 ">
+                <p class="texto-3xl">$400</p>
               </div>
             </div>
           </div>
@@ -259,7 +261,7 @@
         </section>
         <section id="seccion4" class="sec relleno-1">
           <h2>Preguntas Frecuentes</h2>
-          <div class="caja">
+          <div class="caja relleno-1">
             <div class="tarjeta">
               <h2 class="numero texto-color-azul">01</h2>
               <h3 class="pregunta">El servicio de internet es ilimitado</h3>
@@ -424,7 +426,12 @@
                   placeholder="mensaje"
                   rows="4"
                 ></textarea>
-                <button type="submit" class="btn-enviar btn-primario f-negrita hover:btn-primario relleno-1">Enviar</button>
+                <button
+                  type="submit"
+                  class="btn-enviar btn-primario f-negrita hover:btn-primario relleno-1"
+                >
+                  Enviar
+                </button>
               </form>
             </div>
           </div>
