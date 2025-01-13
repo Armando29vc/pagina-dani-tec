@@ -17,6 +17,7 @@ img {
 @media (prefers-color-scheme: dark) {
   body {
     --color-bg: #242424;
+    --color-bg-dos: #032f72;
     --color-to: #1e1e1e;
 
     --color-s: #96fcfd; /* color secundario */
@@ -32,6 +33,8 @@ img {
 
 body.claro {
   --color-bg: #fff;
+  --color-bg-dos: #045f91;
+
   --color-tc: #ebebeb;
   --color-s: #032f72; /* color secundario */
   --color-texto: #000;
@@ -45,6 +48,8 @@ body.claro {
 
 body.oscuro {
   --color-bg: #242424;
+  --color-bg-dos: #032f72;
+
   --color-to: #1e1e1e;
   --color-s: #96fcfd; /* color secundario */
   --color-texto: #ffffff;
@@ -212,7 +217,56 @@ button {
 /* modificando la seccion 2 */
 .sec:nth-child(2) {
   text-align: center;
-  font-size: 1.5rem;
+}
+.paquetes {
+  display: grid;
+  height: 100%;
+}
+.paquetes {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.caja-paquete {
+  display: grid;
+  height: 300px;
+  gap: 1rem;
+  color: #fff;
+  box-shadow: 4px 4px 10px var(--sombra-uno);
+  padding-bottom: 2rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.caja-paquete:hover {
+  transform: scale(1.08);
+}
+
+.paquete-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-dos);
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.paquete-sec1 p {
+  font-weight: bold;
+}
+
+.paquete-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--color-s); */
+  background-color: #0ea8c2;
+  margin: 1rem;
+  margin-inline: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 /* modificando la seccion 3 */
@@ -258,7 +312,6 @@ button {
 .caja {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-  padding: 1rem;
   gap: 2rem;
 }
 
@@ -335,7 +388,6 @@ button {
   border-radius: 20px;
   background-color: #6ba0a1;
 }
-
 
 .form-contacto .btn-enviar {
   justify-self: center;

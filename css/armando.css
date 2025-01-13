@@ -133,6 +133,7 @@
 
 .sec-alerta:nth-child(2) {
   color: #ff0000;
+  cursor: pointer;
 }
 
 /* Estilo para la línea de tiempo (barra de progreso) */
