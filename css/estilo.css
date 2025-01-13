@@ -232,6 +232,44 @@ button {
 .div-4 {
   transform: translate(220%, -360%);
 }
+.div-4 {
+  display: none;
+}
+
+.velocidad span {
+  display: inline-block;
+  transform: translateX(100%);
+  opacity: 0;
+  animation: velocidad 0.1s ease-out forwards;
+}
+
+.velocidad span:nth-child(1) {
+  animation-delay: 0s;
+}
+.velocidad span:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.velocidad span:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.velocidad span:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.velocidad span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.velocidad span:nth-child(6) {
+  animation-delay: 0.25s;
+}
+.velocidad span:nth-child(7) {
+  animation-delay: 0.3s;
+}
+.velocidad span:nth-child(8) {
+  animation-delay: 0.35s;
+}
+.velocidad span:nth-child(9) {
+  animation-delay: 0.4s;
+}
 
 .oscuro .sec:nth-child(odd) {
   background-color: var(--color-to);
@@ -590,9 +628,6 @@ button {
     transform: translate(500%, -150%);
   }
 
-  .div-4 {
-    display: none;
-  }
   .div-4 svg {
     width: 80px !important;
     height: 80px !important;
@@ -606,41 +641,6 @@ button {
   .sec:nth-child(3) {
     padding-inline: 0;
     align-content: center;
-  }
-
-  .velocidad span {
-    display: inline-block;
-    transform: translateX(100%);
-    opacity: 0;
-    animation: velocidad 0.1s ease-out forwards;
-  }
-
-  .velocidad span:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .velocidad span:nth-child(2) {
-    animation-delay: 0.05s;
-  }
-  .velocidad span:nth-child(3) {
-    animation-delay: 0.1s;
-  }
-  .velocidad span:nth-child(4) {
-    animation-delay: 0.15s;
-  }
-  .velocidad span:nth-child(5) {
-    animation-delay: 0.2s;
-  }
-  .velocidad span:nth-child(6) {
-    animation-delay: 0.25s;
-  }
-  .velocidad span:nth-child(7) {
-    animation-delay: 0.3s;
-  }
-  .velocidad span:nth-child(8) {
-    animation-delay: 0.35s;
-  }
-  .velocidad span:nth-child(9) {
-    animation-delay: 0.4s;
   }
 
   .promociones {
