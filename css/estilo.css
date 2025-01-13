@@ -484,6 +484,7 @@ button {
 }
 .facebook {
   width: 25px;
+  height: auto;
   transition: transform 0.3s ease;
 }
 
