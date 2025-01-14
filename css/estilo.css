@@ -276,7 +276,7 @@ button {
   display: inline-block;
   transform: translateX(100%);
   opacity: 0;
-  animation: velocidad 0.1s ease-out forwards;
+  animation: velocidad 0.5s ease-out forwards;
 }
 
 .velocidad span:nth-child(1) {
