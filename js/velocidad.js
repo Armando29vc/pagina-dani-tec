@@ -12,7 +12,7 @@ export default function animacionVelocidad() {
 
     if (index === texto.length - 1) {
       span.addEventListener("animationend", () => {
-        div4.style.display = "block";
+        div4.style.visibility = "visible";
         div4.style.animation = "aparecer 0.5s ease-out forwards";
       });
     }
