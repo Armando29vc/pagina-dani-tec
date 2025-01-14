@@ -557,6 +557,7 @@ button {
 }
 .logo-masconect {
   width: 150px;
+  min-height: 108.5px;
 }
 .facebook {
   width: 25px;
