@@ -8,10 +8,10 @@ export default function whatsapp(e, enviar) {
       alerta = document.createElement("DIV");
       alerta.classList.add("fijo");
 
-      const divMensaje = document.createElement("DIV")
-      divMensaje.classList.add("sec-alerta")
+      const divMensaje = document.createElement("DIV");
+      divMensaje.classList.add("sec-alerta");
       divMensaje.textContent = "Por favor, agrega el mensaje";
-      alerta.appendChild(divMensaje)
+      alerta.appendChild(divMensaje);
 
       const closeButton = document.createElement("DIV");
       closeButton.classList.add("sec-alerta");
@@ -26,7 +26,6 @@ export default function whatsapp(e, enviar) {
       progressBar.classList.add("barra-progreso");
       alerta.appendChild(progressBar);
 
-
       // Añadir la alerta al formulario
       enviar.appendChild(alerta);
       setTimeout(() => {
@@ -35,7 +34,7 @@ export default function whatsapp(e, enviar) {
     }
     return;
   }
-  const telefono= "529518848121"
+  const telefono = "529711874010";
   const api = `https://api.whatsapp.com/send?phone=${telefono}&text=${mensaje}`;
   const newWindow = window.open(api, "_blank");
   if (newWindow) {
